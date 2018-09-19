@@ -1,0 +1,11 @@
+#login-form{
+  width: 400px;
+}
+.icon-header{
+  width: 80px;
+  margin-bottom: 2vh;
+}
+
+.ng-invalid:not(form)  {
+  border-right: 5px solid #a94442; /* red */
+}

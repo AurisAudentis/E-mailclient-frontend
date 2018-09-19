@@ -1,0 +1,13 @@
+<div class="actionbar">
+  <p class="action">Delete</p>
+  <p class="action">Reply</p>
+  <p class="action">Forward</p>
+</div>
+<div id="container">
+  <div class="header">
+    <h2 class="subject">{{mail.email.subject}}</h2>
+    <p>{{mail.email.from.text}} --- {{mail.email.to.text}}</p>
+  </div>
+
+  <app-mail-renderer [mail]="mail"></app-mail-renderer>
+</div>

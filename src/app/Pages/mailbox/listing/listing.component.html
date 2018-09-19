@@ -1,0 +1,3 @@
+<div id="listing">
+<app-listing-item *ngFor="let mail of mails | async" [mail]="mail" class="list-item" (click)="displayMail(mail)"></app-listing-item>
+</div>

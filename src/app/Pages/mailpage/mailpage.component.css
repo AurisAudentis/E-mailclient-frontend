@@ -1,0 +1,21 @@
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 94vh;
+  align-items: stretch;
+}
+#sidebar {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 100%;
+  background-color: #e7eff6;
+  color: #2a4d69;
+}
+#content {
+  width: 100%;
+  min-height: 100%;
+}
+div {
+  min-height: 100%;
+}

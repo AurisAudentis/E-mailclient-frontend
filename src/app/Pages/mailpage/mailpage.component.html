@@ -1,0 +1,11 @@
+
+<div class="wrapper">
+  <nav id="sidebar">
+    <app-sidebar></app-sidebar>
+  </nav>
+  <div id="content">
+    <div *ngIf="mail$ | async as mail">
+      <app-mail-wrapper-page [mail]="mail"></app-mail-wrapper-page>
+    </div>
+  </div>
+</div>

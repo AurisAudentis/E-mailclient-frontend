@@ -1,0 +1,14 @@
+
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+.box {
+  color: #2a4d69;
+  display: block;
+}
+.box:hover {
+  background-color: #FCFCFC;
+  cursor:pointer;
+}

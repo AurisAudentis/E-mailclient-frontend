@@ -1,0 +1,28 @@
+#main{
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 5px;
+}
+#main div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+
+}
+#main:hover{
+  background-color: #cccccc;
+}
+#date{
+  width: 10%;
+  text-align: right;
+}
+#from{
+  width: 20%;
+}
+#subj{
+  width: 65%;
+}

@@ -1,0 +1,20 @@
+<div class="sidebar-header">
+  <h3 class="mt-5">Accounts</h3>
+</div>
+<div class="card box" href="" *ngFor="let acc of accounts">
+  <div class="card-header" (click)="select(acc)">
+    <span class="fa fa-envelope fa-lg"></span>
+    {{acc}}
+  </div>
+  <div class="card-body" [ngbCollapse]="collapsed[acc]">
+    <div *ngFor="let box of accountToBox[acc]">
+      <p (click)="selectBox(acc, box)">{{box}}</p>
+    </div>
+  </div>
+</div>
+<div class="card-header box" (click)="addAccount()">
+  <span class="fa fa-plus-circle"></span>
+  Add account
+</div>
+
+

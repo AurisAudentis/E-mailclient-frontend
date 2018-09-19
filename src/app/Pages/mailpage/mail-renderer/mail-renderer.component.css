@@ -1,0 +1,8 @@
+:host {
+  height: 100%;
+}
+
+div {
+  min-height: 80vh;
+  overflow: auto;
+}

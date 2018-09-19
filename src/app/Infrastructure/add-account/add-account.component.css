@@ -1,0 +1,19 @@
+#gmailbutton {
+  background-color: #d14836;
+}
+#gmailbutton:hover {
+  background-color: #d45C4C;
+}
+#outlookbutton {
+  background-color:  #1f497d;
+}
+#outlookbutton:hover {
+  background-color:  #2f598d;
+}
+#mgbutton {
+  background-color: black;
+  color:white;
+}
+.serverbutton {
+  height: 5vh;
+}

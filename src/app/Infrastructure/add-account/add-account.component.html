@@ -1,0 +1,40 @@
+<div class="modal-header">
+  <h4 class="modal-title">Add an email source</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <!--Stage 0: Server pick-->
+  <div *ngIf="stage === 0">
+    <button class="btn btn-block serverbutton" id="gmailbutton" (click)="nextServer('gmail')"> <span class="fa fa-google"></span> Gmail</button>
+    <button class="btn btn-block serverbutton" id="outlookbutton" (click)="nextServer('outlook')"> <span class="fa fa-windows"></span> Outlook</button>
+    <button class="btn btn-block serverbutton" id="mgbutton" (click)="nextServer('mg')" > <span class="fa fa-medium-m"></span> MG account</button>
+    <button class="btn btn-block serverbutton" id="otherbutton" (click)="nextServer('other')" ><span class="fa fa-plus-circle"></span> Other</button>
+  </div>
+
+  <div *ngIf="stage === 1">
+    This functionality is yet to be added.
+    <button class="btn btn-block serverbutton" (click)="backToStage(0)">Back</button>
+  </div>
+
+
+  <div *ngIf="stage === 2">
+    <form (ngSubmit)="toAdd(email, password)" #loginForm="ngForm">
+      <div class="form-group"><label for="emailInput">Account name</label>
+        <div class="input-group">
+          <div class="input-group-prepend"><span class="fa fa-user input-group-text"></span></div><input required [(ngModel)]="email" class="form-control" id="emailInput" type="email" name="username" placeholder="Email" email>
+        </div>
+      </div>
+      <div class="form-group"><label for="passwordInput">Provider password</label>
+        <div class="input-group">
+          <div class="input-group-prepend"><span class="fa fa-lock input-group-text"></span></div><input required [(ngModel)]="password" class="form-control" id="passwordInput" type="password" name="password" placeholder="Password">
+        </div>
+      </div>
+      <button [disabled]="!loginForm.form.valid" class="btn btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close()">Close</button>
+</div>

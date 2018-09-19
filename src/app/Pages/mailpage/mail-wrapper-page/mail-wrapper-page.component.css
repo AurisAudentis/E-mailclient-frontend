@@ -1,0 +1,23 @@
+.header {
+  margin: 20px 20px 20px 15px;
+  padding-left: 10px;
+  border-left: solid;
+}
+p {
+  margin-bottom: 0;
+}
+h2 {
+  margin-bottom: 1vh;
+}
+#container {
+  margin-left: 1.5vw;
+}
+.actionbar {
+  min-height: 40px;
+  height: 3vh;
+  background-color:#F7F7F7;
+  width: 100%;
+}
+.action{
+  display: inline-block;
+}
